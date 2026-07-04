@@ -1,4 +1,16 @@
+const today = new Date();
+
+const currentDate = today.toLocaleDateString("en-IN", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+
+const currentDay = today.toLocaleDateString("en-IN", {
+  weekday: "long",
+});
 const studentData = {
+  
   name: "Mitali",
   enrollmentNo: "24IT1234",
   semester: 3,

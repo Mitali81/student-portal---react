@@ -72,10 +72,10 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <div className="logo-icon">🎓</div>
+        <div className="logo-icon">📚</div>
         <div className="logo-text">
-          <span>Student</span>
-          <span>Portal</span>
+          <span>Acadify</span>
+          <small>Your Academic Hub</small>
         </div>
       </div>
 
