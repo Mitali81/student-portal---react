@@ -47,3 +47,27 @@
     grid-template-columns: 1fr;
   }
 }
+.subject-options {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 35px;
+}
+
+.subject-option-btn {
+  width: fit-content;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  background: #8B5E3C;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subject-option-btn:hover {
+  background: #6f472a;
+  transform: translateX(6px);
+}
