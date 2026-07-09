@@ -1,11 +1,17 @@
 import './InfoCards.css';
 
-function getDate() {
-  return new Date().toLocaleDateString('en-GB', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
+function getDay() {
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  return days[new Date().getDay()];
 }
 
 function getDate() {
@@ -43,7 +49,7 @@ export default function InfoCards({ student }) {
         </div>
         <div className="info-detail">
           <p className="info-label">Date</p>
-          <p className="info-value">{student.date}</p>
+          <p className="info-value">{getDate()}</p>
         </div>
       </div>
 
@@ -59,7 +65,10 @@ export default function InfoCards({ student }) {
         </div>
         <div className="info-detail">
           <p className="info-label">Day</p>
-          <p className="info-value">{student.day}</p>
+          
+          
+
+          <p className="info-value">{getDay()}</p>
         </div>
       </div>
 
